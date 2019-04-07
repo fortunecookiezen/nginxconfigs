@@ -8,6 +8,6 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-  artifacts:
-    files:
-      - nginx-fcz-dev-api-proxy.zip
+artifacts:
+  files:
+    - nginx-fcz-dev-api-proxy.zip
