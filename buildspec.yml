@@ -4,11 +4,11 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - zip nginx-fcz-dev-api-proxy.zip nginx.conf
+      - zip fcz-dev-api-proxy.zip nginx.conf
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
     - '**/*'
-  name: nginx-fcz-dev-api-proxy.zip
+  name: fcz-dev-api-${AWS_REGION}-proxy.zip
